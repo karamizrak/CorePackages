@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MinistryOfHealth.$(AssemblyName)</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MinistryOfHealth.$(AssemblyName)</PackageId>
+    <Version>1.0.1</Version>
+    <Title>MinistryOfHealth $(AssemblyName)</Title>
+    <Description>The MinistryOfHealth Core.Mailing.MailKit package provides core classes and extensions for sending emails using MailKit in the application layer in both clean and union architectures. It includes support for configuring SMTP servers, defining email templates, sending HTML and plain text emails, and essential utilities for email sending management using MailKit library.</Description>
+    <Product>MinistryOfHealth</Product>
+    <Authors>MinistryOfHealth, Contributors</Authors>
+    <Company>MinistryOfHealth</Company>
+    <PackageTags>Clean Architecture, Union Architecture, Core, MinistryOfHealth, Mailing, Email, SMTP, MailKit, Notification, Communication</PackageTags>
+  
+  </PropertyGroup>
+
+ 
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Mailing\Core.Mailing.csproj" />
+  </ItemGroup>
+
+</Project>

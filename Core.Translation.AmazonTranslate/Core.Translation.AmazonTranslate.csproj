@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MinistryOfHealth.$(AssemblyName)</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MinistryOfHealth.$(AssemblyName)</PackageId>
+    <Version>1.0.2</Version>
+    <Title>MinistryOfHealth $(AssemblyName)</Title>
+    <Description>The MinistryOfHealth Core.Translation.AmazonTranslate package provides core classes and extensions for integrating Amazon Translate service as a translation provider in the application layer in both clean and union architectures. It includes support for configuring Amazon Translate clients, translating text, and managing translations using Amazon Translate service in applications.</Description>
+    <Product>MinistryOfHealth</Product>
+    <Authors>MinistryOfHealth, Contributors</Authors>
+    <Company>MinistryOfHealth</Company>
+    <PackageTags>Clean Architecture, Union Architecture, Core, MinistryOfHealth, Translation, Localization, Amazon Translate, Translation Provider, AWS, Configuration, Text Translation, Integration, Extension</PackageTags>
+   
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Translate" Version="3.7.300.80" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Translation.Abstraction\Core.Translation.Abstraction.csproj" />
+  </ItemGroup>
+</Project>
